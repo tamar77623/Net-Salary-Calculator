@@ -1,0 +1,98 @@
+/* ضبط عام للخطوط وتوسط الصفحة */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #0f1115; /* خلفية داكنة فاخرة */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    background-color: #1a1d24; /* لون رمادي مزرق داكن */
+    padding: 35px 30px;
+    border-radius: 16px; /* زوايا دائرية ناعمة */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* ظل عميق */
+    width: 100%;
+    max-width: 420px;
+}
+
+/* العنوان */
+h3 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+/* حقول الإدخال (تم تكبيرها وتحسينها) */
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* تباعد مريح بين الحقول */
+    padding: 16px 20px; /* زيادة الحشو لتكبير الحقل */
+    background-color: #242831; /* لون حقل متناسق */
+    color: #ffffff;
+    border: 2px solid transparent; /* إطار مخفي يظهر عند التركيز */
+    border-radius: 10px; /* زوايا متناسقة */
+    font-size: 16px; /* خط واضح وكبير */
+    transition: all 0.25s ease;
+}
+
+/* تأثير التمرير فوق الحقل */
+input:hover {
+    background-color: #2c313d;
+}
+
+/* تأثير الضغط والتركيز على الحقل */
+input:focus {
+    background-color: #242831;
+    border-color: #4f46e5; /* إطار بنفسجي عصري */
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15); /* هالة مضيئة حول الحقل */
+}
+
+/* الزر الرئيسي */
+button {
+    width: 100%;
+    padding: 16px; /* حجم الزر متناسق مع الحقول */
+    background-color: #4f46e5; /* لون بنفسجي جذاب (Indigo) */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* تأثير تمرير الفأرة فوق الزر */
+button:hover {
+    background-color: #4338ca;
+    transform: translateY(-1px); /* حركة رفع خفيفة للأعلى */
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+}
+
+/* تأثير الضغط على الزر */
+button:active {
+    transform: translateY(1px); /* تأثير الارتداد عند النقر */
+}
+span{
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    margin: 5px;
+    color: white;
+}
+#clear{
+    display: none;
+}
